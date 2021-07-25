@@ -1,6 +1,10 @@
 .DS_STORE
 
-/dist/
+**/bin/*
+**/obj/*
+**/dist/*
+**/Properties/*
+**/.vscode/*
 /bazel-out
 /integration/bazel/bazel-*
 *.log
@@ -24,6 +28,7 @@ modules/.settings
 modules/.vscode
 .vimrc
 .nvimrc
+appsettings.json
 
 # Don't check in secret files
 *secret.js

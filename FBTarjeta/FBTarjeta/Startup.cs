@@ -34,7 +34,7 @@ namespace FBTarjeta
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FBTarjeta", Version = "v1" });
             });
 
-            services.AddDbContext<AplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<AplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("tarjetaConnectionString")));
             services.AddCors(options => options.AddPolicy("AllowWebApp",
                 builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
         }
